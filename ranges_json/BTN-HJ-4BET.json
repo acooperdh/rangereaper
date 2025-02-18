@@ -1,0 +1,1692 @@
+{
+  "AA": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.9982" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0.0018", "value": "All-in" },
+    "5bet_allin": { "freq": "0.0018" }
+  },
+  "AKo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.32582979" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0.63447021", "value": "All-in" },
+    "5bet_allin": { "freq": "0.63447021" }
+  },
+  "AQo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.2080607" },
+    "call": { "freq": "0.0245393" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "AJo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.4264" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "ATo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.0001" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A9o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A8o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A7o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A6o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A5o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A4o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A3o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A2o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "AKs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "1" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "KK": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.0585" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0.9415", "value": "All-in" },
+    "5bet_allin": { "freq": "0.9415" }
+  },
+  "KQo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.7578" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "KJo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "KTo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K9o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K8o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K7o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K6o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K5o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K4o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K3o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K2o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "AQs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.6646" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "KQs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.161" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "QQ": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.9236" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "QJo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "QTo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q9o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q8o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q7o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q6o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q5o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q4o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q3o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q2o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "AJs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.2157" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "KJs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.2327" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "QJs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.20607336" },
+    "call": { "freq": "0.38882664" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "JJ": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.3041" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "JTo": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J9o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J8o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J7o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J6o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J5o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J4o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J3o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J2o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "ATs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.2392" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "KTs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.3143" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "QTs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.75162293" },
+    "call": { "freq": "0.00067707" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "JTs": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.18543765" },
+    "call": { "freq": "0.26086235" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "TT": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.14080409" },
+    "call": { "freq": "0.46689591" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T9o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T8o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T7o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T6o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T5o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T4o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T3o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T2o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A9s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "5.694E-5" },
+    "call": { "freq": "0.18974306" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K9s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.9996" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q9s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J9s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.0027986" },
+    "call": { "freq": "1.4E-6" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T9s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.00015286" },
+    "call": { "freq": "0.76414714" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "99": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.02602032" },
+    "call": { "freq": "0.11757968" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "98o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "97o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "96o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "95o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "94o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "93o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "92o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A8s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.4351436" },
+    "call": { "freq": "0.3080564" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K8s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.3613" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q8s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J8s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T8s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.0002" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "98s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "88": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.01104828" },
+    "call": { "freq": "0.38925172" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "87o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "86o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "85o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "84o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "83o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "82o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A7s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.80333568" },
+    "call": { "freq": "0.13426432" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K7s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.0167" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q7s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J7s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T7s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "97s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "87s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.1523" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "77": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.1011096" },
+    "call": { "freq": "0.3452904" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "76o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "75o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "74o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "73o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "72o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A6s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.4326" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K6s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q6s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J6s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T6s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "96s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "86s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "76s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.4432" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "66": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.07774224" },
+    "call": { "freq": "0.03095776" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "65o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "64o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "63o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "62o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A5s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "7.849E-5" },
+    "call": { "freq": "0.78482151" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K5s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.0044" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q5s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J5s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T5s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "95s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "85s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "75s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "65s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.7119" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "55": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "9.961E-5" },
+    "call": { "freq": "3.9E-7" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "54o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "53o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "52o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A4s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.39653623" },
+    "call": { "freq": "0.01916377" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K4s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q4s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J4s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T4s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "94s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "84s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "74s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "64s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "54s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0.1697" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "44": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "43o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "42o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A3s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.9594" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K3s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q3s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J3s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T3s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "93s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "83s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "73s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "63s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "53s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "43s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "33": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "32o": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "A2s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0.0492" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "K2s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "Q2s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "J2s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "T2s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "92s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "82s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "72s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "62s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "52s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "42s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "32s": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  },
+  "22": {
+    "raise": { "value": "0", "freq": "0" },
+    "fold": { "freq": "0" },
+    "call": { "freq": "0" },
+    "3bet": { "freq": "0" },
+    "4bet": { "freq": "0" },
+    "4bet_allin": { "freq": "0" },
+    "5bet": { "freq": "0" },
+    "5bet_allin": { "freq": "0" }
+  }
+}

@@ -42,3 +42,7 @@ HAND_RANGE_CHART_CLASS_NAMES = [
     "Raise",
     "Fold"
 ]
+
+ACTION_NAMES = ["RFI", "RAISE", "3BET", "4BET", "4BET_ALLIN", "5BET_ALLIN"]
+
+POSITIONS = ["LJ", "HJ", "CO", "BTN", "SB", "BB"]

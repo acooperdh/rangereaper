@@ -1,8 +1,9 @@
-from bs4 import BeautifulSoup, ResultSet, Tag
+from bs4 import BeautifulSoup, ResultSet#,  Tag
 import re
 import os
+import pathlib
 import random
-
+from poker_constants import ACTION_NAMES, POSITIONS
 # fold_regex = re.compile("^Fold=")
 # call_regex = re.compile("^Call=")
 # raise_regex = re.compile("^Raise \d*")
@@ -38,9 +39,39 @@ class ScrapeRangeCharts:
         self.five_bet_raise_regex = re.compile("5-bet \d*")
         self.five_bet_all_in_regex = re.compile("5-bet All-in=*")
         self.comments_regex = re.compile("<!--|-->")
+        self.file_info = []
 
-    def get_all_file_paths() -> dict: 
-        return {}
+    def get_all_file_paths(self, range_dir = "CASH_6MAX_100") -> list: 
+        current_dir = os.path.dirname(__file__)
+        file_info = []
+        for hero in POSITIONS:
+            for action in ACTION_NAMES:
+                temp_path = ""
+                if action == "RFI":
+                    temp_path = f'{current_dir}/{range_dir}/{hero}/{action}/{hero}_{action}.html'
+                    folder_exists = pathlib.Path(temp_path).exists()
+                    if folder_exists:
+                        temp_obj = {
+                            "position": hero,
+                            "action": action,
+                            "villan": "NA",
+                            "file_path": temp_path
+                        }
+                    file_info.append(temp_obj)
+                else:
+                    for villan in POSITIONS:
+                        temp_path = f'{current_dir}/{range_dir}/{hero}/{action}/{hero}_VS_{villan}_{action}.html'
+                        folder_exists = pathlib.Path(temp_path).exists()
+                        if folder_exists:
+                            temp_obj = {
+                                "position": hero,
+                                "action": action,
+                                "villan": villan,
+                                "file_path": temp_path
+                            }
+                            file_info.append(temp_obj)
+        self.file_info = file_info
+        return file_info
 
     def parse_file_for_chart_cols(self, file_path: str) -> ResultSet:
         html_file = open(file_path, "r", encoding="utf-8")
@@ -81,7 +112,7 @@ class ScrapeRangeCharts:
             else:
                 temp['fold'] = {"freq": "0"}
             if can_call is not None:
-                call_info = can_call.attrs['class'].split["="][1]
+                call_info = can_call.attrs['class'][0].split("=")[1]
                 temp['call'] =  {
                     "freq": call_info
                 }
@@ -90,8 +121,8 @@ class ScrapeRangeCharts:
                     "freq": "0"
                 }
             if can_3bet is not None:
-                three_bet_info = can_3bet.attrs['class'].split("=")
-                value = three_bet_info[0].split(" ")[1]
+                three_bet_info = can_3bet.attrs['class'][1].split("=")
+                value = three_bet_info[0]
                 freq = three_bet_info[1]
                 temp['3bet'] = {
                     "freq":  freq,
@@ -102,8 +133,8 @@ class ScrapeRangeCharts:
                     "freq": "0"
                 }
             if can_4bet is not None:
-                four_bet_info = can_4bet.attrs['class'].split("=")
-                value = four_bet_info[0].split(" ")[1]
+                four_bet_info = can_4bet.attrs['class'][1].split("=")
+                value = four_bet_info[0]
                 freq = four_bet_info[1]
                 temp['4bet'] = {
                     "freq":  freq,
@@ -114,7 +145,7 @@ class ScrapeRangeCharts:
                     "freq": "0"
                 }
             if can_4bet_allin is not None:
-                four_bet_allin_info = can_4bet_allin.attrs['class'].split("=")[1]
+                four_bet_allin_info = can_4bet_allin.attrs['class'][1].split("=")[1]
                 temp['4bet_allin'] = {
                     "freq": four_bet_allin_info
                 }
@@ -123,8 +154,8 @@ class ScrapeRangeCharts:
                     "freq": "0"
                 }
             if can_5bet is not None:
-                five_bet_info = can_5bet.attrs['class'].split("=")
-                value = five_bet_info[0].split(" ")[1]
+                five_bet_info = can_5bet.attrs['class'][1].split("=")
+                value = five_bet_info[0]
                 freq = five_bet_info[1] 
                 temp['5bet'] = {
                     "freq": freq,
@@ -135,7 +166,7 @@ class ScrapeRangeCharts:
                     "freq": "0"
                 }
             if can_5bet_allin is not None:
-                five_bet_allin_info = can_5bet_allin.attrs['class'].split("=")[1]
+                five_bet_allin_info = can_5bet_allin.attrs['class'][1].split("=")[1]
                 temp['5bet_allin'] = {
                     "freq": five_bet_allin_info
                 }
@@ -197,7 +228,7 @@ i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 #         }
 #     if can_4bet is not None:
 #         four_bet_info = can_4bet.attrs['class'].split("=")
-#         value = four_bet_info[0].split(" ")[1]
+#         value = four_bet_info[0][1]
 #         freq = four_bet_info[1]
 #         temp['4bet'] = {
 #             "freq":  freq,
