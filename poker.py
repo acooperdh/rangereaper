@@ -1,6 +1,7 @@
-from rangereaper.poker_constants import *
+from poker_constants import *
 import random
 import numpy as np
+from HandRange import HandRange
 
 card_ranks = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"]
 rank_index = {rank: i for i, rank in enumerate(card_ranks)}  # Fast lookup
@@ -65,7 +66,6 @@ def get_hands_in_range(range_str: str, matrix):
     return
 
 
-
 def parse_poker_range(range_str, matrix):
     selected_hands = set()
 
@@ -98,10 +98,38 @@ def parse_poker_range(range_str, matrix):
 
     return selected_hands
 
+# output of this loop is true until the user wishes to exit the program
+# def user_input_collector() -> bool: 
+    
+
 def main():
     print("Hello poker")
     deck = generate_deck()
     poker_range = "A5o+, K8+, QTo+"
+    user_input = {}
+    print('************ RANGE REAPER oooo scary ***************')
+    print("What is your position:\n1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
+    user_pos = int(input("-->: "))
+    print("What is villan position:\n0.NA 1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
+    villain_pos = int(input('-->: '))
+    print("What is the action?\n1.RFI 2.RAISE 3.3BET 4.4BET\n5.4BET_ALLIN\n6.5BET 7.5BET_ALLIN")
+    action = int(input("-->: "))
+    if villain_pos == 0 or action == 1:
+        villain_pos = "NA"
+        action = "RFI"
+    else:
+        villain_pos = POSITIONS[villain_pos - 1]
+        action = ACTION_NAMES[action-1]
+    user_pos = POSITIONS[user_pos-1]
+    print(user_pos, villain_pos, action)
+    print("Enter your hand")
+    user_hand = input("-->: ")
+    print(f'{user_pos}-{villain_pos}-{action}-{user_hand}')
+    file_path = ""
+    if action == "RFI" or villain_pos == "NA":
+        file_path = f'{user_pos}-{action}.json'
+    else:
+        file_path = f'{user_pos}-{villain_pos}-{action}.json'
     # generate_possible_hand_types()
 
     # poker_hands = generate_poker_hands()
@@ -115,10 +143,6 @@ def main():
     # selected_hands = parse_poker_range(poker_range, poker_matrix)
     # print("selected hands")
     # print(selected_hands)
-    lojack_rfi = "A3s+,A10o+,K8s+,KJo+,Q9s+,QJo+,J9s+,T9s+,66+"
-    for x in lojack_rfi.split(","):
-        print(x)
-        get_hands_in_range(x, "")
 
 if __name__ == "__main__":
     main()
