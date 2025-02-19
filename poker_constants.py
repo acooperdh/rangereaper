@@ -38,11 +38,103 @@ SIX_MAX_POSITIONS = ["SB", "BB", "LJ", "HJ", "CO", "BTN"]
 
 SIX_MAX_PREFLOP_POSITIONS = ["LJ", "HJ", "CO", "BTN", "SB", "BB"]
 
-HAND_RANGE_CHART_CLASS_NAMES = [
-    "Raise",
-    "Fold"
-]
+HAND_RANGE_CHART_CLASS_NAMES = ["Raise", "Fold"]
 
-ACTION_NAMES = ["RFI", "RAISE", "3BET", "4BET", "4BET_ALLIN", "5BET_ALLIN"]
+ACTION_NAMES = ["RFI", "RAISE", "3BET", "4BET", "4BET_ALLIN", "5BET", "5BET_ALLIN"]
 
 POSITIONS = ["LJ", "HJ", "CO", "BTN", "SB", "BB"]
+
+POSITION_SCENARIOS = {
+    "LJ": {
+        "RFI",
+        "HJ-3BET",
+        "HJ-5BET_ALLIN",
+        "CO-3BET",
+        "CO-5BET_ALLIN",
+        "BTN-3BET",
+        "BTN-5BET_ALLIN",
+        "SB-3BET",
+        "SB-5BET_ALLIN",
+        "BB-3BET",
+        "BB-5BET_ALLIN",
+    },
+    "HJ": {
+        "RFI",
+        "LJ-4BET",
+        "LJ-4BET_ALLIN",
+        "LJ-RAISE",
+        "CO-3BET",
+        "CO-5BET_ALLIN",
+        "BTN-3BET",
+        "BTN-5BET_ALLIN",
+        "BB-3BET",
+        "BB-5BET_ALLIN",
+        "SB-3BET",
+        "SB-5BET_ALLIN"
+    },
+    "CO": {
+        "RFI",
+        "LJ-RAISE",
+        "LJ-4BET",
+        "LJ-4BET_ALLIN",
+        "HJ-RAISE",
+        "HJ-4BET",
+        "HJ-4BET_ALLIN",
+        "BTN-3BET",
+        "BTN-5BET_ALLIN",
+        "SB-3BET",
+        "SB-5BET_ALLIN"
+        "BB-3BET",
+        "BB-5BET_ALLIN"
+    }, 
+    "BTN": {
+        "RFI",
+        "LJ-RAISE",
+        "LJ-4BET",
+        "LJ-4BET_ALLIN",
+        "HJ-RAISE",
+        "HJ-4BET",
+        "HJ-4BET_ALLIN",
+        "CO-RAISE",
+        "CO-4BET",
+        "CO-4BET_ALLIN",
+        "SB-3BET",
+        "SB-5BET_ALLIN",
+        "BB-3BET",
+        "BB-5BET_ALLIN"
+    }, 
+    "SB": {
+        "RFI",
+        "LJ-RAISE",
+        "LJ-4BET",
+        "LJ-4BET_ALLIN",
+        "HJ-RAISE",
+        "HJ-4BET",
+        "HJ-4BET_ALLIN",
+        "CO-RAISE",
+        "CO-4BET",
+        "CO-4BET_ALLIN",
+        "BTN-RAISE",
+        "BTN-4BET",
+        "BTN-4BET_ALLIN",
+        "BB-3BET",
+        "BB-5BET_ALLIN"
+    }, 
+    "BB": {
+        "LJ-RAISE",
+        "LJ-4BET",
+        "LJ-4BET_ALLIN",
+        "HJ-RAISE",
+        "HJ-4BET",
+        "HJ-4BET_ALLIN",
+        "CO-RAISE",
+        "CO-4BET",
+        "CO-4BET_ALLIN",
+        "BTN-RAISE",
+        "BTN-4BET",
+        "BTN-4BET_ALLIN",
+        "SB-4BET",
+        "SB-4BET_ALLIN"
+
+    }
+}

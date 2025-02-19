@@ -1,9 +1,10 @@
 from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES
 import numpy as np
 from HandRange import HandRange
-
+import random
 card_ranks = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"]
 rank_index = {rank: i for i, rank in enumerate(card_ranks)}  # Fast lookup
+
 
 def generate_deck():
     deck = []
@@ -39,6 +40,7 @@ def generate_poker_hands():
 
     return hand_combinations
 
+
 def generate_poker_hand_matrix():
     size = len(card_ranks)
     matrix = np.empty((size, size), dtype=object)  # 13x13 array of strings
@@ -54,6 +56,7 @@ def generate_poker_hand_matrix():
 
     return matrix
 
+
 def get_hands_in_range(range_str: str, matrix):
     is_expanded_range: bool = range_str.endswith("+")
     is_suited: bool = "s" in range_str
@@ -64,42 +67,56 @@ def get_hands_in_range(range_str: str, matrix):
 
     return
 
+
 # output of this loop is true until the user wishes to exit the program
 # def user_input_collector() -> bool:
+
 
 def get_hero_position(user_input: int) -> str:
     return ""
 
+
 def main():
     print("Hello poker")
-    print('************ RANGE REAPER oooo scary ***************')
-    print("What is your position:\n1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
-    user_pos = int(input("-->: "))
-    print("What is villan position:\n0.NA 1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
-    villain_pos = int(input('-->: '))
-    print("What is the action?\n1.RFI 2.RAISE 3.3BET 4.4BET\n5.4BET_ALLIN\n6.5BET 7.5BET_ALLIN")
-    action = int(input("-->: "))
-    if villain_pos == 0 or action == 1:
-        villain_pos = "NA"
-        action = "RFI"
-    else:
-        villain_pos = POSITIONS[villain_pos - 1]
-        action = ACTION_NAMES[action-1]
-    user_pos = POSITIONS[user_pos-1]
-    print(user_pos, villain_pos, action)
-    print("Enter your hand")
-    user_hand = input("-->: ")
-    print(f'{user_pos}-{villain_pos}-{action}-{user_hand}')
-    file_path = ""
-    if action == "RFI" or villain_pos == "NA":
-        file_path = f'{user_pos}-{action}.json'
-    else:
-        file_path = f'{user_pos}-{villain_pos}-{action}.json'
-    print(f'file path: {file_path}')
+    continue_running = True
+    print("************ RANGE REAPER oooo scary ***************")
+    while(continue_running):
 
+        print("What is your position:\n1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
+        user_pos = int(input("-->: "))
+        if user_pos == 10:
+            return
+        print("What is villan position:\n0.NA 1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
+        villain_pos = int(input("-->: "))
+        if villain_pos == 10:
+            return
+        print(
+            "What is the action?\n1.RFI 2.RAISE 3.3BET 4.4BET\n5.4BET_ALLIN\n6.5BET 7.5BET_ALLIN"
+        )
+        action = int(input("-->: "))
+        if action == 10:
+            return
+        if villain_pos == 0 or action == 1:
+            villain_pos = "NA"
+            action = "RFI"
+        else:
+            villain_pos = POSITIONS[villain_pos - 1]
+            action = ACTION_NAMES[action - 1]
+        user_pos = POSITIONS[user_pos - 1]
+        print(user_pos, villain_pos, action)
+        print("Enter your hand")
+        user_hand = input("-->: ")
+        print(f"{user_pos}-{villain_pos}-{action}-{user_hand}")
+        file_path = ""
+        if action == "RFI" or villain_pos == "NA":
+            file_path = f"{user_pos}-{action}.json"
+        else:
+            file_path = f"{user_pos}-{villain_pos}-{action}.json"
+        print(f"file path: {file_path}")
 
-    hand_range = HandRange(user_pos)
-    print(hand_range)
+        hand_range = HandRange(user_pos)
+        range_json = hand_range.load_ranges_from_json(hand_range.get_range_file_path(user_pos, villain_pos, action))
+        print(range_json[user_hand])
     # generate_possible_hand_types()
 
     # poker_hands = generate_poker_hands()
@@ -113,6 +130,7 @@ def main():
     # selected_hands = parse_poker_range(poker_range, poker_matrix)
     # print("selected hands")
     # print(selected_hands)
+
 
 if __name__ == "__main__":
     main()

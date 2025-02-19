@@ -1,9 +1,10 @@
-from bs4 import BeautifulSoup, ResultSet#,  Tag
+from bs4 import BeautifulSoup, ResultSet  # ,  Tag
 import re
 import os
 import pathlib
 import random
 from poker_constants import ACTION_NAMES, POSITIONS
+
 # fold_regex = re.compile("^Fold=")
 # call_regex = re.compile("^Call=")
 # raise_regex = re.compile("^Raise \d*")
@@ -26,6 +27,7 @@ from poker_constants import ACTION_NAMES, POSITIONS
 # hand_combo = col_one.attrs['data-handid']
 # print(hand_combo)
 
+
 class ScrapeRangeCharts:
 
     def __init__(self, name: str):
@@ -41,33 +43,33 @@ class ScrapeRangeCharts:
         self.comments_regex = re.compile("<!--|-->")
         self.file_info = []
 
-    def get_all_file_paths(self, range_dir = "CASH_6MAX_100") -> list:
+    def get_all_file_paths(self, range_dir="CASH_6MAX_100") -> list:
         current_dir = os.path.dirname(__file__)
         file_info = []
         for hero in POSITIONS:
             for action in ACTION_NAMES:
                 temp_path = ""
                 if action == "RFI":
-                    temp_path = f'{current_dir}/{range_dir}/{hero}/{action}/{hero}_{action}.html'
+                    temp_path = f"{current_dir}/{range_dir}/{hero}/{action}/{hero}_{action}.html"
                     folder_exists = pathlib.Path(temp_path).exists()
                     if folder_exists:
                         temp_obj = {
                             "position": hero,
                             "action": action,
                             "villan": "NA",
-                            "file_path": temp_path
+                            "file_path": temp_path,
                         }
                     file_info.append(temp_obj)
                 else:
                     for villan in POSITIONS:
-                        temp_path = f'{current_dir}/{range_dir}/{hero}/{action}/{hero}_VS_{villan}_{action}.html'
+                        temp_path = f"{current_dir}/{range_dir}/{hero}/{action}/{hero}_VS_{villan}_{action}.html"
                         folder_exists = pathlib.Path(temp_path).exists()
                         if folder_exists:
                             temp_obj = {
                                 "position": hero,
                                 "action": action,
                                 "villan": villan,
-                                "file_path": temp_path
+                                "file_path": temp_path,
                             }
                             file_info.append(temp_obj)
         self.file_info = file_info
@@ -76,13 +78,15 @@ class ScrapeRangeCharts:
     def parse_file_for_chart_cols(self, file_path: str) -> ResultSet:
         html_file = open(file_path, "r", encoding="utf-8")
         soup = BeautifulSoup(self.comments_regex.sub("", html_file.read()), "lxml")
-        chart_cols: ResultSet = soup.find("div", {"class": "chart_full_data"}).find_all("div", {"class": "row"})
+        chart_cols: ResultSet = soup.find("div", {"class": "chart_full_data"}).find_all(
+            "div", {"class": "row"}
+        )
         return chart_cols
 
     def get_range_values(self, range_cols: ResultSet):
         hands = {}
         for row in range_cols:
-            hand = row.attrs['data-handid']
+            hand = row.attrs["data-handid"]
             temp = {}
             can_call = row.find("div", {"class": self.call_regex})
             can_raise = row.find("div", {"class": self.raise_regex})
@@ -94,98 +98,64 @@ class ScrapeRangeCharts:
             can_5bet_allin = row.find("div", {"class": self.five_bet_all_in_regex})
 
             if can_raise is not None:
-                raise_info = can_raise.attrs['class'][1].split("=")
+                raise_info = can_raise.attrs["class"][1].split("=")
                 value = raise_info[0]
                 freq = raise_info[1]
-                temp['raise'] = {
-                    "value": value,
-                    "freq": freq
-                }
+                temp["raise"] = {"value": value, "freq": freq}
             else:
-                temp['raise'] = {
-                    "value": "0",
-                    "freq": "0"
-                }
+                temp["raise"] = {"value": "0", "freq": "0"}
             if can_fold is not None:
-                fold_info = can_fold.attrs['class'][0].split("=")[1]
-                temp['fold'] = {"freq": fold_info}
+                fold_info = can_fold.attrs["class"][0].split("=")[1]
+                temp["fold"] = {"freq": fold_info}
             else:
-                temp['fold'] = {"freq": "0"}
+                temp["fold"] = {"freq": "0"}
             if can_call is not None:
-                call_info = can_call.attrs['class'][0].split("=")[1]
-                temp['call'] =  {
-                    "freq": call_info
-                }
+                call_info = can_call.attrs["class"][0].split("=")[1]
+                temp["call"] = {"freq": call_info}
             else:
-                temp['call'] = {
-                    "freq": "0"
-                }
+                temp["call"] = {"freq": "0"}
             if can_3bet is not None:
-                three_bet_info = can_3bet.attrs['class'][1].split("=")
+                three_bet_info = can_3bet.attrs["class"][1].split("=")
                 value = three_bet_info[0]
                 freq = three_bet_info[1]
-                temp['3bet'] = {
-                    "freq":  freq,
-                    "value": value
-                }
+                temp["3bet"] = {"freq": freq, "value": value}
             else:
-                temp['3bet'] = {
-                    "freq": "0"
-                }
+                temp["3bet"] = {"freq": "0"}
             if can_4bet is not None:
-                four_bet_info = can_4bet.attrs['class'][1].split("=")
+                four_bet_info = can_4bet.attrs["class"][1].split("=")
                 value = four_bet_info[0]
                 freq = four_bet_info[1]
-                temp['4bet'] = {
-                    "freq":  freq,
-                    "value": value
-                }
+                temp["4bet"] = {"freq": freq, "value": value}
             else:
-                temp['4bet'] = {
-                    "freq": "0"
-                }
+                temp["4bet"] = {"freq": "0"}
             if can_4bet_allin is not None:
-                four_bet_allin_info = can_4bet_allin.attrs['class'][1].split("=")[1]
-                temp['4bet_allin'] = {
-                    "freq": four_bet_allin_info
-                }
+                four_bet_allin_info = can_4bet_allin.attrs["class"][1].split("=")[1]
+                temp["4bet_allin"] = {"freq": four_bet_allin_info}
             else:
-                temp['4bet_allin'] = {
-                    "freq": "0"
-                }
+                temp["4bet_allin"] = {"freq": "0"}
             if can_5bet is not None:
-                five_bet_info = can_5bet.attrs['class'][1].split("=")
+                five_bet_info = can_5bet.attrs["class"][1].split("=")
                 value = five_bet_info[0]
                 freq = five_bet_info[1]
-                temp['5bet'] = {
-                    "freq": freq,
-                    "value": value
-                }
+                temp["5bet"] = {"freq": freq, "value": value}
             else:
-                temp['5bet'] = {
-                    "freq": "0"
-                }
+                temp["5bet"] = {"freq": "0"}
             if can_5bet_allin is not None:
-                five_bet_allin_info = can_5bet_allin.attrs['class'][1].split("=")[1]
-                temp['5bet_allin'] = {
-                    "freq": five_bet_allin_info
-                }
+                five_bet_allin_info = can_5bet_allin.attrs["class"][1].split("=")[1]
+                temp["5bet_allin"] = {"freq": five_bet_allin_info}
             else:
-                temp['5bet_allin'] = {
-                    "freq": "0"
-                }
-
+                temp["5bet_allin"] = {"freq": "0"}
 
             hands[hand] = temp
         return hands
 
 
-'''
+"""
 For each hand we want to look for all of the possible actions and record
 what the recommended sizing is, as well as the % of time that it should be done.
 
 i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
-'''
+"""
 # hands = {}
 # for row in chart_columns:
 #     hand = row.attrs['data-handid']
