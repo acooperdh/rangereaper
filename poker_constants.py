@@ -121,19 +121,26 @@ POSITION_SCENARIOS = {
         "BB-5BET_ALLIN",
     },
     "BB": {
-        "LJ-RAISE",
-        "LJ-4BET",
-        "LJ-4BET_ALLIN",
-        "HJ-RAISE",
-        "HJ-4BET",
-        "HJ-4BET_ALLIN",
-        "CO-RAISE",
-        "CO-4BET",
-        "CO-4BET_ALLIN",
-        "BTN-RAISE",
-        "BTN-4BET",
-        "BTN-4BET_ALLIN",
-        "SB-4BET",
-        "SB-4BET_ALLIN",
+        "RAISE": {
+            "LJ",
+            "HJ",
+            "CO",
+            "BTN",
+            "SB"
+        },
+        "4BET": {
+            "LJ",
+            "HJ",
+            "CO",
+            "BTN",
+            "SB"
+        },
+        "4BET_ALLIN": {
+            "LJ",
+            "HJ",
+            "CO",
+            "BTN",
+            "SB"
+        },
     },
 }
