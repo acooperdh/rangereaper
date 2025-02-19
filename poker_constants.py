@@ -70,7 +70,7 @@ POSITION_SCENARIOS = {
         "BB-3BET",
         "BB-5BET_ALLIN",
         "SB-3BET",
-        "SB-5BET_ALLIN"
+        "SB-5BET_ALLIN",
     },
     "CO": {
         "RFI",
@@ -83,10 +83,9 @@ POSITION_SCENARIOS = {
         "BTN-3BET",
         "BTN-5BET_ALLIN",
         "SB-3BET",
-        "SB-5BET_ALLIN"
-        "BB-3BET",
-        "BB-5BET_ALLIN"
-    }, 
+        "SB-5BET_ALLIN" "BB-3BET",
+        "BB-5BET_ALLIN",
+    },
     "BTN": {
         "RFI",
         "LJ-RAISE",
@@ -101,8 +100,8 @@ POSITION_SCENARIOS = {
         "SB-3BET",
         "SB-5BET_ALLIN",
         "BB-3BET",
-        "BB-5BET_ALLIN"
-    }, 
+        "BB-5BET_ALLIN",
+    },
     "SB": {
         "RFI",
         "LJ-RAISE",
@@ -118,8 +117,8 @@ POSITION_SCENARIOS = {
         "BTN-4BET",
         "BTN-4BET_ALLIN",
         "BB-3BET",
-        "BB-5BET_ALLIN"
-    }, 
+        "BB-5BET_ALLIN",
+    },
     "BB": {
         "LJ-RAISE",
         "LJ-4BET",
@@ -134,7 +133,6 @@ POSITION_SCENARIOS = {
         "BTN-4BET",
         "BTN-4BET_ALLIN",
         "SB-4BET",
-        "SB-4BET_ALLIN"
-
-    }
+        "SB-4BET_ALLIN",
+    },
 }

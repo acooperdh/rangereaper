@@ -2,6 +2,7 @@ from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES
 import numpy as np
 from HandRange import HandRange
 import random
+
 card_ranks = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"]
 rank_index = {rank: i for i, rank in enumerate(card_ranks)}  # Fast lookup
 
@@ -80,7 +81,7 @@ def main():
     print("Hello poker")
     continue_running = True
     print("************ RANGE REAPER oooo scary ***************")
-    while(continue_running):
+    while continue_running:
 
         print("What is your position:\n1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
         user_pos = int(input("-->: "))
@@ -88,14 +89,17 @@ def main():
             return
         print("What is villan position:\n0.NA 1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
         villain_pos = int(input("-->: "))
-        if villain_pos == 10:
-            return
-        print(
-            "What is the action?\n1.RFI 2.RAISE 3.3BET 4.4BET\n5.4BET_ALLIN\n6.5BET 7.5BET_ALLIN"
-        )
-        action = int(input("-->: "))
-        if action == 10:
-            return
+        if villain_pos == 0:
+            action = 1
+        else:
+            if villain_pos == 10:
+                return
+            print(
+                "What is the action?\n1.RFI 2.RAISE 3.3BET 4.4BET\n5.4BET_ALLIN\n6.5BET 7.5BET_ALLIN"
+            )
+            action = int(input("-->: "))
+            if action == 10:
+                return
         if villain_pos == 0 or action == 1:
             villain_pos = "NA"
             action = "RFI"
@@ -115,7 +119,9 @@ def main():
         print(f"file path: {file_path}")
 
         hand_range = HandRange(user_pos)
-        range_json = hand_range.load_ranges_from_json(hand_range.get_range_file_path(user_pos, villain_pos, action))
+        range_json = hand_range.load_ranges_from_json(
+            hand_range.get_range_file_path(user_pos, villain_pos, action)
+        )
         print(range_json[user_hand])
     # generate_possible_hand_types()
 
