@@ -1,7 +1,6 @@
-from poker_constants import *
-import random
+from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES
 import numpy as np
-from HandRange import HandRange
+# from HandRange import HandRange
 
 card_ranks = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"]
 rank_index = {rank: i for i, rank in enumerate(card_ranks)}  # Fast lookup
@@ -58,49 +57,18 @@ def generate_poker_hand_matrix():
 def get_hands_in_range(range_str: str, matrix):
     is_expanded_range: bool = range_str.endswith("+")
     is_suited: bool = "s" in range_str
-    row_or_col: bool = "row" if is_suited else "column"
+    row_or_col: str = "row" if is_suited else "column"
     print(is_expanded_range, " is expanded range")
     print(is_suited, " is suited")
     print(row_or_col, " row or col")
 
     return
 
-
-def parse_poker_range(range_str, matrix):
-    selected_hands = set()
-
-    for term in range_str.split(","):
-        term = term.strip()
-
-        if "+" in term:  # Handles "A5o+", "K8s+"
-            base, plus = term[:-1], term[-1]
-            rank1, rank2 = base[0], base[1]
-            suit_type = "" if len(base) == 2 else base[2]  # "s", "o", or ""
-
-            r1_idx = rank_index[rank1]
-            r2_idx = rank_index[rank2]
-
-            # Include the pair (AA, KK, etc.)
-            selected_hands.add(matrix[r1_idx, r1_idx])
-
-            # Expand the range from rank2 upwards
-            for i in range(r2_idx, len(card_ranks)):
-                expanded_hand = rank1 + card_ranks[i] + suit_type
-                selected_hands.add(matrix[r1_idx, i])
-
-        elif len(term) == 2:  # Handles pairs like "QQ"
-            r_idx = rank_index[term[0]]
-            selected_hands.add(matrix[r_idx, r_idx])
-
-        else:  # Handles specific hands like "K8s"
-            r1_idx, r2_idx = rank_index[term[0]], rank_index[term[1]]
-            selected_hands.add(matrix[r1_idx, r2_idx])
-
-    return selected_hands
-
 # output of this loop is true until the user wishes to exit the program
-# def user_input_collector() -> bool: 
-    
+# def user_input_collector() -> bool:
+
+def get_hero_position(user_input: int) -> str:
+    return ""
 
 def main():
     print("Hello poker")
@@ -130,6 +98,7 @@ def main():
         file_path = f'{user_pos}-{action}.json'
     else:
         file_path = f'{user_pos}-{villain_pos}-{action}.json'
+    print(f'file path: {file_path}')
     # generate_possible_hand_types()
 
     # poker_hands = generate_poker_hands()
@@ -139,7 +108,7 @@ def main():
     # poker_matrix = generate_poker_hand_matrix()
     # for x in poker_matrix:
     #     print(x)
-    
+
     # selected_hands = parse_poker_range(poker_range, poker_matrix)
     # print("selected hands")
     # print(selected_hands)

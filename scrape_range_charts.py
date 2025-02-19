@@ -32,16 +32,16 @@ class ScrapeRangeCharts:
         self.name = name
         self.fold_regex = re.compile("^Fold=")
         self.call_regex = re.compile("^Call=")
-        self.raise_regex = re.compile("^Raise \d*")
-        self.three_bet_regex = re.compile("^3-bet \d*")
-        self.four_bet_raise_regex = re.compile("4-bet \d*")
+        self.raise_regex = re.compile("^Raise *")
+        self.three_bet_regex = re.compile("^3-bet *")
+        self.four_bet_raise_regex = re.compile("4-bet *")
         self.four_bet_all_in_regex = re.compile("4-bet All-in=*")
-        self.five_bet_raise_regex = re.compile("5-bet \d*")
+        self.five_bet_raise_regex = re.compile("5-bet *")
         self.five_bet_all_in_regex = re.compile("5-bet All-in=*")
         self.comments_regex = re.compile("<!--|-->")
         self.file_info = []
 
-    def get_all_file_paths(self, range_dir = "CASH_6MAX_100") -> list: 
+    def get_all_file_paths(self, range_dir = "CASH_6MAX_100") -> list:
         current_dir = os.path.dirname(__file__)
         file_info = []
         for hero in POSITIONS:
@@ -101,7 +101,7 @@ class ScrapeRangeCharts:
                     "value": value,
                     "freq": freq
                 }
-            else: 
+            else:
                 temp['raise'] = {
                     "value": "0",
                     "freq": "0"
@@ -116,7 +116,7 @@ class ScrapeRangeCharts:
                 temp['call'] =  {
                     "freq": call_info
                 }
-            else: 
+            else:
                 temp['call'] = {
                     "freq": "0"
                 }
@@ -128,7 +128,7 @@ class ScrapeRangeCharts:
                     "freq":  freq,
                     "value": value
                 }
-            else: 
+            else:
                 temp['3bet'] = {
                     "freq": "0"
                 }
@@ -140,7 +140,7 @@ class ScrapeRangeCharts:
                     "freq":  freq,
                     "value": value
                 }
-            else: 
+            else:
                 temp['4bet'] = {
                     "freq": "0"
                 }
@@ -156,7 +156,7 @@ class ScrapeRangeCharts:
             if can_5bet is not None:
                 five_bet_info = can_5bet.attrs['class'][1].split("=")
                 value = five_bet_info[0]
-                freq = five_bet_info[1] 
+                freq = five_bet_info[1]
                 temp['5bet'] = {
                     "freq": freq,
                     "value": value
@@ -175,16 +175,16 @@ class ScrapeRangeCharts:
                     "freq": "0"
                 }
 
-            
+
             hands[hand] = temp
         return hands
 
 
 '''
-For each hand we want to look for all of the possible actions and record 
-what the recommended sizing is, as well as the % of time that it should be done. 
+For each hand we want to look for all of the possible actions and record
+what the recommended sizing is, as well as the % of time that it should be done.
 
-i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739 
+i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 '''
 # hands = {}
 # for row in chart_columns:
@@ -207,7 +207,7 @@ i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 #             "value": value,
 #             "freq": freq
 #         }
-#     else: 
+#     else:
 #         temp['raise'] = {
 #             "value": "0",
 #             "freq": "0"
@@ -222,7 +222,7 @@ i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 #         temp['call'] =  {
 #             "freq": call_info
 #         }
-#     else: 
+#     else:
 #         temp['call'] = {
 #             "freq": "0"
 #         }
@@ -234,7 +234,7 @@ i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 #             "freq":  freq,
 #             "value": value
 #         }
-#     else: 
+#     else:
 #         temp['4bet'] = {
 #             "freq": "0"
 #         }
@@ -250,7 +250,7 @@ i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 #     if can_5bet is not None:
 #         five_bet_info = can_5bet.attrs['class'].split("=")
 #         value = five_bet_info[0].split(" ")[1]
-#         freq = five_bet_info[1] 
+#         freq = five_bet_info[1]
 #         temp['5bet'] = {
 #             "freq": freq,
 #             "value": value
@@ -269,7 +269,7 @@ i.e. Raise 2.5bb=0.6739 is Raise, 2.5bb, 0.6739
 #             "freq": "0"
 #         }
 
-    
+
 #     hands[hand] = temp
 # print(hands)
 # print(hands['54s'])
