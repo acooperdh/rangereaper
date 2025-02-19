@@ -1,6 +1,6 @@
 from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES
 import numpy as np
-# from HandRange import HandRange
+from HandRange import HandRange
 
 card_ranks = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"]
 rank_index = {rank: i for i, rank in enumerate(card_ranks)}  # Fast lookup
@@ -72,9 +72,6 @@ def get_hero_position(user_input: int) -> str:
 
 def main():
     print("Hello poker")
-    deck = generate_deck()
-    poker_range = "A5o+, K8+, QTo+"
-    user_input = {}
     print('************ RANGE REAPER oooo scary ***************')
     print("What is your position:\n1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
     user_pos = int(input("-->: "))
@@ -99,6 +96,10 @@ def main():
     else:
         file_path = f'{user_pos}-{villain_pos}-{action}.json'
     print(f'file path: {file_path}')
+
+
+    hand_range = HandRange(user_pos)
+    print(hand_range)
     # generate_possible_hand_types()
 
     # poker_hands = generate_poker_hands()
