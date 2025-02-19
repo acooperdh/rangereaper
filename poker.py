@@ -110,6 +110,14 @@ def main():
         print(user_pos, villain_pos, action)
         print("Enter your hand")
         user_hand = input("-->: ")
+        user_hand_list = []
+        for letter in user_hand:
+            user_hand_list.append(letter)
+        if len(user_hand_list) == 2:
+            user_hand = f'{user_hand_list[0].capitalize()}{user_hand_list[1].capitalize()}'
+        else:
+            user_hand = f'{user_hand_list[0].capitalize()}{user_hand_list[1].capitalize()}{user_hand_list[2].lower()}'
+        print(user_hand_list)
         print(f"{user_pos}-{villain_pos}-{action}-{user_hand}")
         file_path = ""
         if action == "RFI" or villain_pos == "NA":
@@ -121,7 +129,12 @@ def main():
         hand_range = HandRange(user_pos)
         range_json = hand_range.load_ranges_from_json(
             hand_range.get_range_file_path(user_pos, villain_pos, action)
+        
         )
+        
+        for temp in range_json[user_hand]:
+            print(temp)
+            print(range_json[user_hand][temp])
         print(range_json[user_hand])
     # generate_possible_hand_types()
 

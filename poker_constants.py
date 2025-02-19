@@ -83,7 +83,8 @@ POSITION_SCENARIOS = {
         "BTN-3BET",
         "BTN-5BET_ALLIN",
         "SB-3BET",
-        "SB-5BET_ALLIN" "BB-3BET",
+        "SB-5BET_ALLIN",
+        "BB-3BET",
         "BB-5BET_ALLIN",
     },
     "BTN": {
