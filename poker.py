@@ -128,8 +128,7 @@ def main():
 
         hand_range = HandRange(user_pos)
         range_json = hand_range.load_ranges_from_json(
-            hand_range.get_range_file_path(user_pos, villain_pos, action)
-        
+            hand_range.get_range_file_path(user_pos, villain_pos, action) 
         )
         
         for temp in range_json[user_hand]:
