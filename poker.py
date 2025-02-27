@@ -1,4 +1,5 @@
-from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES, POSITION_SCENARIOS 
+from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES, POSITION_SCENARIOS
+from constants import INPUT_PREFIX
 import numpy as np
 from HandRange import HandRange
 import random
@@ -81,60 +82,85 @@ def format_file_name(hand_info, is_rfi) -> str:
         f"{hand_info[0].capitalize()}{hand_info[1].capitalize()}{hand_info[2].lower()}"
     )
 
+
 def possible_villain_pos(hero_pos: str, villain_pos: str) -> list:
-    print(POSITION_SCENARIOS[hero_pos][villain_pos])
+    print("Position scenarios ", POSITION_SCENARIOS[hero_pos][villain_pos])
     return POSITION_SCENARIOS[hero_pos][villain_pos]
 
+
+def get_pos(pos: str):
+        print(f'What is {pos} position:\n1.LJ 2.HJ 3.CO 4.BTN 5.SB 6.BB')
+        input_pos = input(INPUT_PREFIX)
+        if input_pos == "-1" or input_pos.upper() == "Q":
+            return "-1"
+        try:
+            input_pos = int(input_pos)
+            if input_pos > len(POSITIONS) or input_pos <= 0:
+                raise ValueError("idiot")
+            return POSITIONS[input_pos - 1]
+        except ValueError:
+            print("bruh input a real position idiot")
+            return get_pos(pos)
+        
+def get_action(pos_actions: list[str]) -> str:
+    actions_string = ""
+    for i in range(len(pos_actions)):
+        actions_string += f'{i+1}. {pos_actions[i]}'
+    print(f'What is the action\n{actions_string}')
+    action = input(INPUT_PREFIX)
+    if action == "-1" or action.upper() ==  "Q":
+        return "-1"
+    try:
+        action = int(action)
+        return pos_actions[action - 1]
+    except ValueError:
+        print("bruh enter an real action idiot")
+        return get_action(pos_actions)
+    
+def get_hand():
+    print("Enter your hand")
+    user_hand = input(INPUT_PREFIX)
+    user_hand_list = []
+    if len(user_hand) > 2:
+        for i in range(len(user_hand)):
+            if i + 1 < len(user_hand):
+                user_hand_list.append(user_hand[i].upper())
+            else:
+                user_hand_list.append(user_hand[i])
+    else:
+        for i in range(len(user_hand)):
+            user_hand_list.append(user_hand[i].upper())
+    user_hand = ""
+    for i in range(len(user_hand_list)):
+        user_hand += user_hand_list[i]
+    return user_hand
 def main():
     print("Hello poker")
     continue_running = True
     print("************ RANGE REAPER oooo scary ***************")
     while continue_running:
-        print("What is your position:\n1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
-        user_pos = int(input("-->: "))
-        if user_pos == 10:
+        user_pos = get_pos("hero")
+        if user_pos == "-1":
             return
-        print("What is villan position:\n0.NA 1.LJ 2.HJ 3.CO \n4.BTN 5.SB 6.BB")
-        villain_pos = int(input("-->: "))
-
-        user_pos = POSITIONS[user_pos-1]
-        if villain_pos == 0 or villain_pos == user_pos:
-            villain_pos = "RFI"
+        villain_pos = get_pos("villain")
+        if villain_pos == "-1":
+            return
+        # working on optimzing the input flow so the action options that are shown are based on the hero and villain so you
+        # can't pick an action that is not possible for the current positions
+        action = ""
+        if villain_pos == user_pos:
             action = "RFI"
         else:
-            villain_pos = POSITIONS[villain_pos-1]
-            if villain_pos == 10:
+            possible_actions = possible_villain_pos(user_pos, villain_pos)
+            print(possible_actions, "possible actions")
+            action = get_action(possible_actions)
+            if action == "-1":
                 return
-
-        # working on optimzing the input flow so the action options that are shown are based on the hero and villain so you 
-        # can't pick an action that is not possible for the current positions
-        formatted_villain_pos = villain_pos
-        possible_actions = possible_villain_pos(user_pos, formatted_villain_pos)
-        print(possible_actions, "possible actions")
-        print("What is the action?\n1.RFI 2.RAISE 3.3BET 4.4BET\n5.4BET_ALLIN\n6.5BET 7.5BET_ALLIN")
-        action = int(input("-->: "))
-        if action == 10:  
-            return
-        if villain_pos == 0 or action == 1:
-            villain_pos = "NA"
-            action = "RFI"
         print(user_pos, villain_pos, action)
-        print("Enter your hand")
-        user_hand = input("-->: ")
-        user_hand_list = []
-        for letter in user_hand:
-            user_hand_list.append(letter)
-        
-        user_hand_list = format_file_name(user_hand_list, len(user_hand_list) == 2)
-        print(user_hand_list)
-        formatted_villain_pos = villain_pos
-        if villain_pos == "NA":
-            formatted_villain_pos = "RFI"
-        villain_pos_scenarios = possible_villain_pos(user_pos, formatted_villain_pos, action)
-        print(villain_pos_scenarios, "villain pos")
+        user_hand = get_hand()
         print(f"{user_pos}-{villain_pos}-{action}-{user_hand}")
         file_path = ""
-        if action == "RFI" or villain_pos == "NA":
+        if action == "RFI":
             file_path = f"{user_pos}-{action}.json"
         else:
             file_path = f"{user_pos}-{villain_pos}-{action}.json"
@@ -144,9 +170,10 @@ def main():
         range_json = hand_range.load_ranges_from_json(
             hand_range.get_range_file_path(user_pos, villain_pos, action)
         )
-        for temp in range_json[user_hand_list]:
+        for temp in range_json[user_hand]:
             print(temp)
-            print(range_json[user_hand_list][temp])
+            print(range_json[user_hand][temp])
+
 
 if __name__ == "__main__":
     main()
