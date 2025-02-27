@@ -105,7 +105,7 @@ def get_pos(pos: str):
 def get_action(pos_actions: list[str]) -> str:
     actions_string = ""
     for i in range(len(pos_actions)):
-        actions_string += f'{i+1}. {pos_actions[i]}'
+        actions_string += f'{i+1}. {pos_actions[i]} '
     print(f'What is the action\n{actions_string}')
     action = input(INPUT_PREFIX)
     if action == "-1" or action.upper() ==  "Q":
@@ -151,6 +151,7 @@ def main():
         if villain_pos == user_pos:
             action = "RFI"
         else:
+            print(user_pos, villain_pos)
             possible_actions = possible_villain_pos(user_pos, villain_pos)
             print(possible_actions, "possible actions")
             action = get_action(possible_actions)

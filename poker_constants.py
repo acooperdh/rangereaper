@@ -79,15 +79,56 @@ POSITION_SCENARIOS = {
     },
     "SB": {
         "RFI": {},
-        "RAISE": ["LJ", "HJ", "CO", "BTN"],
-        "3BET": ["BB"],
-        "4BET": ["LJ", "HJ", "CO", "BTN"],
-        "4BET_ALLIN": ["LJ", "HJ", "CO", "BTN"],
-        "5BET_ALLIN": ["BB"],
+        "LJ": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "HJ": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "CO": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "BTN": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "BB": [
+            "3BET",
+            "5BET_ALLIN"
+        ]
     },
     "BB": {
-        "RAISE": ["LJ", "HJ", "CO", "BTN", "SB"],
-        "4BET": ["LJ", "HJ", "CO", "BTN", "SB"],
-        "4BET_ALLIN": ["LJ", "HJ", "CO", "BTN", "SB"],
+        "LJ": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "HJ": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "CO": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "BTN": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
+        "SB": [
+            "RAISE",
+            "4BET",
+            "4BET_ALLIN"
+        ],
     },
 }
