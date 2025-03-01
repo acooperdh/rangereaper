@@ -121,6 +121,8 @@ def get_hand():
     print("Enter your hand")
     user_hand = input(INPUT_PREFIX)
     user_hand_list = []
+    if user_hand.upper() == "Q":
+        return "-1"
     if len(user_hand) > 2:
         for i in range(len(user_hand)):
             if i + 1 < len(user_hand):
@@ -159,6 +161,7 @@ def main():
                 return
         print(user_pos, villain_pos, action)
         user_hand = get_hand()
+        if user_hand == "-1": return
         print(f"{user_pos}-{villain_pos}-{action}-{user_hand}")
         file_path = ""
         if action == "RFI":
