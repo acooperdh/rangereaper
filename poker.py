@@ -1,6 +1,6 @@
 from poker_constants import SUITS, CARDS, POSITIONS, ACTION_NAMES, POSITION_SCENARIOS
 from constants import INPUT_PREFIX
-import numpy as np
+# import numpy as np
 from HandRange import HandRange
 import random
 
@@ -177,6 +177,7 @@ def main():
         for temp in range_json[user_hand]:
             print(temp)
             print(range_json[user_hand][temp])
+        print("RANDOM: ", random.randint(0, 1000))
 
 
 if __name__ == "__main__":
